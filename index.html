@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iniciar sesión</title>
+  <script type="text/javascript" src="js/operaciones.js"></script>
 </head>
 
 <body>
@@ -18,14 +19,14 @@
         <h2>Iniciar sesión</h2>
         <table border="0">
           <tr>
-            <td><input type="text" name="usuario" placeholder="Usuario" /></td>
+            <td><input type="text" name="usuario" id="usuario" placeholder="Usuario" required /></td>
           </tr>
           <tr>
-            <td><input type="password" name="contrasenia" placeholder="Contraseña" /></td>
+            <td><input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña" required /></td>
           </tr>
         </table>
         </br>
-        <input type="submit" name="entrar" value="Iniciar sesión" />
+        <input type="submit" name="entrar" value="Iniciar sesión" onclick="validarUsuario()"/>
         </br> </br>
         <a href="html/recuperar.html">Recuperar contraseña</a>
         </br> </br>
@@ -34,7 +35,7 @@
     </form>
   </div>
   <footer>
-    <small><i>Copyright &copy; 2020 Grupo Q</i></small>
+    <i>Copyright &copy; 2020 Grupo Q</i>
   </footer>
 </body>
 

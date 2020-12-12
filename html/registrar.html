@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar usuario</title>
+    <script type="text/javascript" src="../js/operaciones.js"></script>
 </head>
 
 <body>
@@ -17,24 +18,28 @@
                 <h2>Registrar usuario</h2>
                 <table border="0">
                     <tr>
-                        <td><input type="text" name="usuario" placeholder="Nombre de usuario"/></td>
+                        <td><input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required />
+                        </td>
                     </tr>
                     <tr>
-                        <td><input type="password" name="contrasenia" placeholder="Contraseña"/></td>
+                        <td><input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña"
+                                required /></td>
                     </tr>
                     <tr>
-                        <td><input type="email" name="correo" placeholder="Correo electrónico" /> </td>
+                        <td><input type="email" name="email" id="email" placeholder="Correo electrónico" id="email"
+                                required />
+                        </td>
                     </tr>
                 </table>
                 </br>
-                <input type="submit" name="registrar" value="Registrar" />
+                <input type="submit" name="registrar" value="Registrar" onclick="registrarUsuario()" />
                 </br> </br>
-                <a href="../index.html">Iniciar sesión</a>
+                <a href="../index.html">Ya tengo una cuenta</a>
             </center>
         </form>
     </div>
     <footer>
-        <small><i>Copyright &copy; 2020 Grupo Q</i></small>
+        <i>Copyright &copy; 2020 Grupo Q</i>
     </footer>
 </body>
 

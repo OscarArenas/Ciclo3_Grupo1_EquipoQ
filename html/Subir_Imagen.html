@@ -21,24 +21,32 @@
                         <td><input type="text" name="nombre" placeholder="Nombre imagen" /></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="descripcion" placeholder="Descripción" /></td>
+
+                        <td><textarea cols="80" rows="5" name="descripcion" placeholder="Descripción" value="descripcion"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="acceso">Acceso:</label></td>
+
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" id="publico" name="acceso" value="publico" checked>
+                            <label for="publico">Público</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" id="privado" name="acceso" value="privado" checked>
+                            <label for="privado">Privado</label>
+                        </td>
                     </tr>
                 </table>
                 <input type="file" name="subir">
-                <div>
-                    <input type="radio" id="publica" name="acceso" value="publica" checked>
-                    <label for="publica">Pública</label>
-                    <input type="radio" id="privada" name="acceso" value="privada" checked>
-                    <label for="privada">Privada</label>
-                </div>
-
-                </br>
+                </br> </br>
                 <input type="submit" name="subir" value="Subir" />
             </center>
         </form>
     </div>
     <footer>
-        <small><i>Copyright &copy; 2020 Grupo Q</i></small>
+        <i>Copyright &copy; 2020 Grupo Q</i>
     </footer>
 </body>
 

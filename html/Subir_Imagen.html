@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subir Imagen</title>
 </head>
+
 <body>
-    Subir Imagen
+    <header>
+        <h1>Red Social de Imágenes</h1>
+    </header>
+
+    <div>
+        <form>
+            <center>
+                <h2>Subir Imagen</h2>
+                <table border="0">
+                    <tr>
+                        <td><input type="text" name="nombre" placeholder="Nombre imagen" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="descripcion" placeholder="Descripción" /></td>
+                    </tr>
+                </table>
+                <input type="file" name="subir">
+                <div>
+                    <input type="radio" id="publica" name="acceso" value="publica" checked>
+                    <label for="publica">Pública</label>
+                    <input type="radio" id="privada" name="acceso" value="privada" checked>
+                    <label for="privada">Privada</label>
+                </div>
+
+                </br>
+                <input type="submit" name="subir" value="Subir" />
+            </center>
+        </form>
+    </div>
+    <footer>
+        <small><i>Copyright &copy; 2020 Grupo Q</i></small>
+    </footer>
 </body>
+
 </html>

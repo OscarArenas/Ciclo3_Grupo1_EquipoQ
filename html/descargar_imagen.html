@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../css/estilo.css" /> 
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busar imagen</title>
+    <script type="text/javascript" src="../js/operaciones.js"></script>
+
 </head>
 
 <body>
@@ -15,8 +17,9 @@
     </header>
     <br><br><br><br><br><br><br><br>
     <center>
-        <input type="text"  name="ingresarDatoDesc" placeholder="Ingresar palabra clave"  /> <br><br>
-        <input type="submit" class="boton_1" name="descargarImg" value="Descargar Imagen" />
+        <input type="text" name="ingresarDatoDesc" id="datoDescargar" placeholder="Ingresar palabra clave" /> <br><br>
+        <input type="submit" class="boton_1" name="descargarImg" value="Descargar Imagen"
+            onclick="validarDatoDescargar()" />
     </center>
 </body>
 

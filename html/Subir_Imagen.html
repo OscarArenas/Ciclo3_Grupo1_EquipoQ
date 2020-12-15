@@ -2,16 +2,18 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../css/estilo.css" /> 
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subir Imagen</title>
+    <script type="text/javascript" src="../js/operaciones.js"></script>
+
 </head>
 
 <body>
     <header>
         <h1>Red Social de Imágenes <br>
-                     </h1>
+        </h1>
         <h3>Esnegamí</h3>
     </header>
 
@@ -21,15 +23,14 @@
                 <h2>Subir Imagen</h2>
                 <table border="0">
                     <tr>
-                        <td><input type="text" name="nombre" placeholder="Nombre imagen" /></td>
+                        <td><input type="text" name="nombre" id="nombre" placeholder="Nombre imagen" /></td>
                     </tr>
                     <tr>
-
-                        <td><textarea cols="80" rows="5" name="descripcion" placeholder="Descripción" value="descripcion"></textarea></td>
+                        <td><textarea cols="80" rows="5" name="descripcion" id="descripcion" placeholder="Descripción"
+                                value="descripcion"></textarea></td>
                     </tr>
                     <tr>
                         <td><label for="acceso">Acceso:</label></td>
-
                     </tr>
                     <tr>
                         <td> <input type="radio" id="publico" name="acceso" value="publico" checked>
@@ -42,9 +43,10 @@
                         </td>
                     </tr>
                 </table>
-                <input type="file"  name="seleccionarIm">  <!--name = "subir" ya fue esado en submit...-->
+                <input type="file" name="seleccionarIm">
+                <!--name = "subir" ya fue esado en submit...-->
                 </br> </br>
-                <input type="submit" class="boton_1" name="subir" value="Subir" />
+                <input type="submit" class="boton_1" name="subir" value="Subir" onclick="subirImagen()"/>
             </center>
         </form>
     </div>

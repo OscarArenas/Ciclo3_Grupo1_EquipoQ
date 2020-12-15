@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../css/estilo.css" /> 
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eliminiar imagen</title>
+    <script type="text/javascript" src="../js/operaciones.js"></script>
+
 </head>
 
 <body>
@@ -13,11 +15,12 @@
         <h1>Red Social de Imágenes</h1>
         <h3>Esnegamí</h3>
     </header>
-    <br><br><br><br><br><br><br><br>  
+    <br><br><br><br><br><br><br><br>
     <center>
-        <input type="text"  name="ingresarDatoElim" placeholder="Ingresar palabra clave"  /> <br><br>
-        <input type="submit" class="boton_1" name="eliminarImg" value="Eliminar Imagen" />
-        </center>
+        <input type="text" name="ingresarDatoElim" id="eliminar" placeholder="Ingresar palabra clave" /> <br><br>
+        <input type="submit" class="boton_1" name="eliminarImg" value="Eliminar Imagen"
+            onclick="validarDatoEliminar()" />
+    </center>
 </body>
 
 </html>

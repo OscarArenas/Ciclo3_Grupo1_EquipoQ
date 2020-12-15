@@ -2,14 +2,17 @@
 <html lang="es">
 
 <head>
-  <link rel="stylesheet" type="text/css" href="../css/estilo.css" /> 
+  <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recuperar Contraseña</title>
+  <script type="text/javascript" src="../js/operaciones.js"></script>
+
 </head>
 
 <body>
-  <div>  <!-- Este div no tiene cierre ... -->
+  <div>
+    <!-- Este div no tiene cierre ... -->
     <header>
       <h1>Red Social de Imágenes</h1>
       <h3>Esnegamí</h3>
@@ -21,15 +24,15 @@
           <tr>
             Ingresa tu usuario o correo electrónico con el que te registraste. <br>
             Te enviaremos un enlace de recuperación al correo.
-          <!--  <td>Correo:</td> -->   
+            <!--  <td>Correo:</td> -->
           <tr>
             <br></br>
 
-            <td><input type="email" name="correo" placeholder="     Correo o usuario" /> </td>
-    
+            <td><input type="email" name="correo" id="email" placeholder="Correo electrónico" /> </td>
+
         </table>
         </br>
-        <input type="submit" class="boton_1" name="Enviar" value="Enviar" />
+        <input type="submit" class="boton_1" name="Enviar" value="Enviar" onclick="recuperarContrasenia()"/>
       </center>
     </form>
 </body>

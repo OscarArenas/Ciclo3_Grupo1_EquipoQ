@@ -1,0 +1,76 @@
+h1 {
+    font-family: cursive;
+    font-size: 40pt;
+    color: rgb(169, 32, 6); 
+    /* margin-left: 90pt;
+    margin-right: 90pt;*/
+    background-color: rgb(238, 167, 139);
+    text-align: center}  /* Varios atributos */
+
+
+    h3 {font-family: cursive;
+        font-size: 40pt;
+        color: rgb(120, 38, 141); 
+        /* margin-left: 90pt;
+        margin-right: 90pt; */
+        /*background-color: rgb(238, 167, 139); */
+        text-align: center}  /* Varios atributos */ 
+
+h2 {color: rgb(169, 32, 6)} 
+body {background-color: rgb(255, 230, 204)} 
+p {margin-left: 50px} 
+
+
+  .boton_1{
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: cursive;
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(169, 32, 6);
+    background-color: rgb(238, 167, 139);
+    border-radius: 15px;
+    border: 3px double rgb(169, 32, 6);
+  }
+.boton_1:hover{
+    opacity: 0.6;
+    text-decoration: none;}
+
+    .boton_2 a {
+      text-align:center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      background-color: #CCCCCC;
+      text-decoration: none;
+      color: #000000;
+    }
+    .boton_2 a:hover {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      background-color: #000000;
+      text-decoration: none;
+      color: #FF0000;
+    }
+
+
+    /* Botón con imagen! */
+    /*
+ .boton_img_1{                                  
+      background-image:url(../img/Subir.png);         
+    }
+      */
+
+
+
+    body
+    {
+    background-image:url('../img/Logo.png');
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/ 
+    background-position: 75% 30%; 
+    }
+
+/* Comentarios en CSS */
